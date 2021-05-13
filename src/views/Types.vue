@@ -19,7 +19,7 @@
             <div class="row">
               <div class="col">
                 <div class="card" style="width: 18rem;">
-                  <img src="@/assets/estravolc.jpg" class="card-img-top">
+                  <img src="@/assets/estravolc.jpg" class="card-img-top" style="max-height: 200px">
                   <div class="card-body">
                     <h5 class="card-title">Composite volcanoes or Stratovolcano</h5>
                     <p class="card-text" v-if="see1">
@@ -47,7 +47,7 @@
               </div>
               <div class="col">
                 <div class="card" style="width: 18rem;">
-                  <img src="@/assets/caldera.jpg" class="card-img-top">
+                  <img src="@/assets/caldera.jpg" class="card-img-top" style="max-height: 200px">
                   <div class="card-body">
                     <h5 class="card-title">Boilers</h5>
                     <p class="card-text" v-if="see2">
@@ -67,7 +67,7 @@
               </div>
               <div class="col">
                 <div class="card" style="width: 18rem;">
-                  <img src="@/assets/escudo.jpg" class="card-img-top">
+                  <img src="@/assets/escudo.jpg" class="card-img-top" style="max-height: 200px">
                   <div class="card-body">
                     <h5 class="card-title">Volcanoes in Escudo</h5>
                     <p class="card-text" v-if="see3">
@@ -97,7 +97,7 @@
             <div class="row">
               <div class="col">
                 <div class="card" style="width: 18rem;">
-                  <img src="@/assets/cupula.jpg" class="card-img-top">
+                  <img src="@/assets/cupula.jpg" class="card-img-top" style="max-height: 200px">
                   <div class="card-body">
                     <h5 class="card-title">Lava Dome</h5>
                     <p class="card-text" v-if="see4">
@@ -117,7 +117,7 @@
               </div>
               <div class="col">
                 <div class="card" style="width: 18rem;">
-                  <img src="@/assets/cono.jpg" class="card-img-top">
+                  <img src="@/assets/cono.jpg" class="card-img-top" style="max-height: 200px">
                   <div class="card-body">
                     <h5 class="card-title">Cinder Cone or Slag</h5>
                     <p class="card-text" v-if="see5">
@@ -168,17 +168,144 @@
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
            data-parent="#accordionExample" style="color: #2c3e50">
         <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-          terry richardson ad squid. 3 wolf moon
-          officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-          nesciunt laborum eiusmod. Brunch 3 wolf
-          moon tempor, sunt aliqua put a bird on it squid single-origin coffee nul
-          assumenda shoreditch et. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-          proident. Ad vegan excepteur
-          butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-          synth nesciunt you probably
-          haven't heard of them accusamus labore sustainable VHS.
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="@/assets/rash1.jpg" class="card-img-top" style="max-height: 200px">
+                  <div class="card-body">
+                    <h5 class="card-title">Hawaiian</h5>
+                    <p class="card-text" v-if="see6">
+                      The volcano emits a slightly viscous lava, quite fluid,
+                      since it does not have many pyroclastic materials
+                      (hot mixture of gases, ash and rock fragments. The gases are released
+                      little by little, and therefore, the explosions are minimal.
+                    </p>
+                    <p v-else>
+                      the volcano emits a slightly viscous lava, quite fluid...
+                    </p>
+                    <a href="#" class="btn btn-primary"
+                       @click="openOrClose(6)" v-if="see6">Close</a>
+                    <a href="#" class="btn btn-primary"
+                       @click="openOrClose(6)" v-else>See more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="@/assets/rash2.jpg" class="card-img-top" style="max-height: 200px">
+                  <div class="card-body">
+                    <h5 class="card-title">Strombolian</h5>
+                    <p class="card-text" v-if="see7">
+                      The volcano releases pyroclastic material. The explosions
+                      are sporadic and the volcano does not emit lava continuously.
+                    </p>
+                    <p v-else>
+                      the volcano releases pyroclastic material. The explosions...
+                    </p>
+                    <a href="#" class="btn btn-primary"
+                       @click="openOrClose(7)" v-if="see7">Close</a>
+                    <a href="#" class="btn btn-primary"
+                       @click="openOrClose(7)" v-else>See more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="@/assets/rash3.jpg" class="card-img-top" style="max-height: 200px">
+                  <div class="card-body">
+                    <h5 class="card-title">Vulcaniana</h5>
+                    <p class="card-text" v-if="see8">
+                      The volcano emits very viscous lava, little fluid, which solidifies quickly.
+                      Large clouds of pyroclastic material form and a lot of ash is emitted.
+                      They are characterized by producing a cloud-like eruption similar to a
+                      mushroom or fungus. Activity usually begins with a phreatic eruption that
+                      discharges debris. The main phase usually consists of an eruption of viscous
+                      magma, rich in volcanic gases and forming a dark cloud.
+                    </p>
+                    <p v-else>
+                      The volcano emits very viscous lava, little fluid, which solidifies quickly.
+                      Large clouds of...
+                    </p>
+                    <a href="#" class="btn btn-primary"
+                       @click="openOrClose(8)" v-if="see8">Close</a>
+                    <a href="#" class="btn btn-primary"
+                       @click="openOrClose(8)" v-else>See more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="@/assets/rash4.jpeg" class="card-img-top" style="max-height: 200px">
+                  <div class="card-body">
+                    <h5 class="card-title">Pliniana or Vesuviano</h5>
+                    <p class="card-text" v-if="see9">
+                      The volcano emits very viscous lava and the explosion is
+                      violent. It is characterized by its exceptional strength,
+                      continuous gas eruption and the expulsion of large amounts of ash.
+                      Sometimes the expulsion of magma is such that the summit of the volcano
+                      collapses and produces a caldera. During a Plinian eruption,
+                      fine ash can be dispersed over large areas. The Plinian eruptions
+                      are named after the famous Roman naturalist, Pliny the Elder, who died
+                      during an eruption of Vesuvius in 79 AD.
+                    </p>
+                    <p v-else>
+                      The volcano emits very viscous lava and the explosion is...
+                    </p>
+                    <a href="#" class="btn btn-primary"
+                       @click="openOrClose(9)" v-if="see9">Close</a>
+                    <a href="#" class="btn btn-primary"
+                       @click="openOrClose(9)" v-else>See more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="@/assets/rash5.jpg" class="card-img-top" style="max-height: 200px">
+                  <div class="card-body">
+                    <h5 class="card-title">Peleano</h5>
+                    <p class="card-text" v-if="see10">
+                      The volcano is named after the 1902 Mount Pelee eruption in Martinique
+                      in which thousands of people died. The lava quickly consolidates and a
+                      plug is produced in the crater. As the gases have no outlet, great pressure
+                      is created inside the volcano so the walls come to give way and the lava
+                      is expelled from the sides of the volcanoes.
+                    </p>
+                    <p v-else>
+                      The volcano is named after the 1902 Mount Pelee eruption in...
+                    </p>
+                    <a href="#" class="btn btn-primary"
+                       @click="openOrClose(10)" v-if="see10">Close</a>
+                    <a href="#" class="btn btn-primary"
+                       @click="openOrClose(10)" v-else>See more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="@/assets/rash6.jpeg" class="card-img-top" style="max-height: 200px">
+                  <div class="card-body">
+                    <h5 class="card-title">Hydro-Volcanic</h5>
+                    <p class="card-text" v-if="see11">
+                      They are eruptions that are generated by the interaction
+                      of magma with groundwater or surface water. They are the
+                      "liquid: equivalent of a Strombolian eruption, although they
+                      are more explosive.
+                    </p>
+                    <p v-else>
+                      They are eruptions that are generated by the interaction...
+                    </p>
+                    <a href="#" class="btn btn-primary"
+                       @click="openOrClose(11)" v-if="see11">Close</a>
+                    <a href="#" class="btn btn-primary"
+                       @click="openOrClose(11)" v-else>See more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -195,6 +322,12 @@ export default {
       see3: false,
       see4: false,
       see5: false,
+      see6: false,
+      see7: false,
+      see8: false,
+      see9: false,
+      see10: false,
+      see11: false,
     };
   },
   methods: {
@@ -209,6 +342,18 @@ export default {
         this.see4 = !this.see4;
       } else if (codsee === 5) {
         this.see5 = !this.see5;
+      } else if (codsee === 6) {
+        this.see6 = !this.see6;
+      } else if (codsee === 7) {
+        this.see7 = !this.see7;
+      } else if (codsee === 8) {
+        this.see8 = !this.see8;
+      } else if (codsee === 9) {
+        this.see9 = !this.see9;
+      } else if (codsee === 10) {
+        this.see10 = !this.see10;
+      } else if (codsee === 11) {
+        this.see11 = !this.see11;
       }
     },
   },
