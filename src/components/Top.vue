@@ -29,7 +29,7 @@
       </ul>
       <div class="col" style="text-align: end">
         <span class="navbar-text">
-          Made by Ragnarok
+          Made by Ragnarok (Juan Camilo Conteras Chacon)
         </span>
       </div>
     </div>

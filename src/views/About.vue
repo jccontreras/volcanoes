@@ -36,7 +36,7 @@
           </div>
           <div class="col-sm">
             <a class="btn btn-dark btn-lg" href="https://www.youtube.com/user/volcanodiscovery"
-               role="button" target="_blank" title="Chanel">Rash and more Videos</a>
+               role="button" target="_blank" title="Chanel">Rashes and Videos</a>
           </div>
         </div>
       </div>
